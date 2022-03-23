@@ -13,12 +13,15 @@ use App\Events\NewMessage;
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
-    return view('chat');
+    return view('welcome');
 });
 
-
-Auth::routes();
+Route::get('/chat', function() {
+    return view('chat');
+})->middleware('auth');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -28,3 +31,27 @@ Route::group(['middlewarte' => 'auth'], function() {
         echo 'ok';
     }); 
 });
+
+// get user
+Route::get('/getUser', function() {
+	return Auth::user();
+})->middleware('auth');
+
+// get message
+Route::get('/messages', function() {
+    return App\Models\Message::with('user')->get();
+})->middleware('auth');
+
+// insert message
+Route::post('/messages', function() {
+   $user = Auth::user();
+
+  $message = new App\Models\Message();
+  $message->message = request()->get('message', '');
+  $message->user_id = $user->id;
+  $message->save();
+
+  broadcast(new NewMessage($message, $user));
+
+  return ['message' => $message->load('user')];
+})->middleware('auth');

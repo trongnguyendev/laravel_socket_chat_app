@@ -10,19 +10,22 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 use App\Models\User;
+use App\Models\Message;
 
 class NewMessage implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
     public $user;
+    public $message;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(Message $message, User $user)
     {
+        $this->message = $message;
         $this->user = $user;
     }
 
@@ -39,7 +42,10 @@ class NewMessage implements ShouldBroadcast
 
     public function broadcastWith()
     {
-        return ['user' => $this->user];
+        return [
+            'user' => $this->user,
+            'message' => $this->message
+        ];
     }
 
 }

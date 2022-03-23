@@ -23,12 +23,6 @@
         },
         mounted() {
             console.log('Component mounted.')
-            // let _this = this;
-            // window.Echo.channel('chat')
-            // .listen('NewMessage', (data) => {
-            //     console.log('data', data)
-            // });
-
             Echo.channel('chat')
             .listen('NewMessage', (data) => {
                 console.log('data', data)
