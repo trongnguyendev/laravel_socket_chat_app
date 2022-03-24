@@ -5419,6 +5419,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -40408,28 +40441,103 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex w-full" }, [
-    _c("nav", { staticClass: "bg-white w-1/12" }, [
-      _vm._v("\n        aaa\n    "),
-    ]),
-    _vm._v(" "),
-    _c("aside", { staticClass: "bg-gray-500 w-3/12" }, [
-      _vm._v("\n        aaa \n    "),
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "w-7/12 bg-blue-300", attrs: { id: "content" } },
-      [_c("UserIcon", { staticClass: "w-4" }), _vm._v("\n        aaa\n    ")],
-      1
-    ),
-    _vm._v(" "),
-    _c("aside", { staticClass: "bg-white w-1/12" }, [
-      _vm._v("\n        aaa\n    "),
-    ]),
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "flex w-full fixed h-full divide-x-[1px]" },
+      [
+        _c("aside", { staticClass: "bg-white flex divide-x-[1px]" }, [
+          _c("nav", { staticClass: "bg-white w-24 divide-y" }, [
+            _c("div", { staticClass: "p-4" }, [
+              _c("img", {
+                staticClass: "w-9 m-auto",
+                attrs: { src: "images/logo.png", alt: "" },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "p-4 flex flex-row justify-center" }, [
+              _c("div", { staticClass: "avatar" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "w-11 mask mask-hexagon ring ring-primary ring-offset-base-100 ring-offset-2",
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "https://api.lorem.space/image/face?hash=55350",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "aside-main p-4 w-[300px]" }, [
+            _c("div", [
+              _c("h2", { staticClass: "text-2xl font-bold" }, [
+                _vm._v("Chats"),
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-sm" }, [
+                _vm._v("Chat form your friends"),
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass:
+                  "input input-bordered w-full max-w-xs input-sm mt-2 mb-2",
+                attrs: { type: "text", placeholder: "Search message" },
+              }),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "w-full bg-[#eff7fe] relative",
+            attrs: { id: "content" },
+          },
+          [
+            _c("div", { staticClass: "absolute w-full left-0 top-0 p-4" }, [
+              _c("div", { staticClass: "bg-white h-20 p-4" }, [
+                _c("div", { staticClass: "avatar online" }, [
+                  _c("div", { staticClass: "w-11 rounded-full" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "https://api.lorem.space/image/face?hash=28212",
+                      },
+                    }),
+                  ]),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "overflow-auto w-full h-full" }, [
+              _c("div", { staticClass: "h-[2000px]" }),
+            ]),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "absolute bottom-0 left-0 w-full h-20 bg-white",
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c("aside", { staticClass: "bg-white w-1/12 p-4" }, [
+          _vm._v("\n        aside right\n    "),
+        ]),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 
