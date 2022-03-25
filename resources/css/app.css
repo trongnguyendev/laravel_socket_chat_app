@@ -4,20 +4,38 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cad7de; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@layer components {
+  .message_me {
+    @apply justify-start flex-row-reverse
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+
+  .message_me h3{
+    @apply text-right flex flex-row-reverse gap-5 items-center
   }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #cad7de; 
+
+  .message_me .message_content {
+    @apply bg-primary text-white rounded-tr-none
   }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+
+  .message .message_content{
+    @apply bg-gray-200 rounded-tl-none text-black
   }
+}
