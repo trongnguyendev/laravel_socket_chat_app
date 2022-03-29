@@ -38,4 +38,25 @@
   .message .message_content{
     @apply bg-gray-200 rounded-tl-none text-black
   }
+  .blur-avatar {
+    @apply relative
+  }
+  .blur-avatar::before {
+    /* @apply absolute left-0 top-0 h-full w-full rounded-2xl shadow-blur-avarta */
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: inset 0 -25px 40px 6px rgb(0 0 0 / 80%);
+  }
+  .message_active {
+    @apply bg-[#eff7fe] border-l-4 border-primary
+  }
+  .h-recent {
+    height: calc(100% - 253px);
+    overflow: scroll;
+  }
 }

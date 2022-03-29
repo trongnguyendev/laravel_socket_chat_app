@@ -16,18 +16,8 @@
 
 <script>
     export default {
-        data() {
-            return {
-                user: {}
-            }
-        },
         mounted() {
             console.log('Component mounted.')
-            Echo.channel('chat')
-            .listen('NewMessage', (data) => {
-                console.log('data', data)
-            })
-
         }
     }
 </script>
