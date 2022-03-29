@@ -20,7 +20,11 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('chat-layout', require('./layouts/ChatLayout.vue').default);
 
+import Vue from 'vue'
+import * as Vuex  from 'vuex'
+// import Vuex from 'vuex'
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -29,4 +33,20 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    data: {
+        currentUserLogin: {}
+    },
+    created() {
+        this.getCurrentUserLogin()
+    },
+    methods: {
+        async getCurrentUserLogin() {
+            try {
+                const response = await axios.get('/getUser')
+                this.currentUserLogin = response.data
+            } catch(error) {
+                console.log(error)
+            }
+        }
+    }
 });

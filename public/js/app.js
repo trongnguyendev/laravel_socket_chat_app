@@ -5371,11 +5371,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      user: {}
-    };
-  },
   mounted: function mounted() {
     console.log('Component mounted.');
     Echo.channel('chat').listen('NewMessage', function (data) {
@@ -5397,15 +5392,69 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_icons_User_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/icons/User.vue */ "./resources/js/components/icons/User.vue");
-/* harmony import */ var _components_icons_Phone_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/icons/Phone.vue */ "./resources/js/components/icons/Phone.vue");
-/* harmony import */ var _components_icons_Camera_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/icons/Camera.vue */ "./resources/js/components/icons/Camera.vue");
-/* harmony import */ var _components_icons_CircleInfo_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/icons/CircleInfo.vue */ "./resources/js/components/icons/CircleInfo.vue");
-/* harmony import */ var _components_icons_Search_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/icons/Search.vue */ "./resources/js/components/icons/Search.vue");
-/* harmony import */ var _components_icons_PaperClip_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/icons/PaperClip.vue */ "./resources/js/components/icons/PaperClip.vue");
-/* harmony import */ var _components_icons_EmojiHappy_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/icons/EmojiHappy.vue */ "./resources/js/components/icons/EmojiHappy.vue");
-/* harmony import */ var _components_icons_PlusCircle_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/icons/PlusCircle.vue */ "./resources/js/components/icons/PlusCircle.vue");
-/* harmony import */ var _components_icons_PaperPlane_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/icons/PaperPlane.vue */ "./resources/js/components/icons/PaperPlane.vue");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_icons_User_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/icons/User.vue */ "./resources/js/components/icons/User.vue");
+/* harmony import */ var _components_icons_Phone_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/icons/Phone.vue */ "./resources/js/components/icons/Phone.vue");
+/* harmony import */ var _components_icons_Camera_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/icons/Camera.vue */ "./resources/js/components/icons/Camera.vue");
+/* harmony import */ var _components_icons_CircleInfo_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/icons/CircleInfo.vue */ "./resources/js/components/icons/CircleInfo.vue");
+/* harmony import */ var _components_icons_Search_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/icons/Search.vue */ "./resources/js/components/icons/Search.vue");
+/* harmony import */ var _components_icons_PaperClip_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/icons/PaperClip.vue */ "./resources/js/components/icons/PaperClip.vue");
+/* harmony import */ var _components_icons_EmojiHappy_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/icons/EmojiHappy.vue */ "./resources/js/components/icons/EmojiHappy.vue");
+/* harmony import */ var _components_icons_PlusCircle_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/icons/PlusCircle.vue */ "./resources/js/components/icons/PlusCircle.vue");
+/* harmony import */ var _components_icons_PaperPlane_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/icons/PaperPlane.vue */ "./resources/js/components/icons/PaperPlane.vue");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5508,68 +5557,270 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    UserIcon: _components_icons_User_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    PhoneIcon: _components_icons_Phone_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    CameraIcon: _components_icons_Camera_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    CircleIcon: _components_icons_CircleInfo_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    SearchIcon: _components_icons_Search_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    PaperClipIcon: _components_icons_PaperClip_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    EmojiHappyIcon: _components_icons_EmojiHappy_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-    PlusCircleIcon: _components_icons_PlusCircle_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
-    PaperPlaneIcon: _components_icons_PaperPlane_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+    UserIcon: _components_icons_User_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    PhoneIcon: _components_icons_Phone_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+    CameraIcon: _components_icons_Camera_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    CircleIcon: _components_icons_CircleInfo_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    SearchIcon: _components_icons_Search_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    PaperClipIcon: _components_icons_PaperClip_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    EmojiHappyIcon: _components_icons_EmojiHappy_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+    PlusCircleIcon: _components_icons_PlusCircle_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+    PaperPlaneIcon: _components_icons_PaperPlane_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
   },
   data: function data() {
     return {
+      current_message: 1,
+      message: '',
+      list_messages: [],
       messages: [{
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'Yeah everything is fine'
+        message: 'Yeah everything is fine'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: '& Next meeting tomorrow 10.00AM'
+        message: '& Next meeting tomorrow 10.00AM'
       }, {
         type: 0,
         avarta: 'https://api.lorem.space/image/face?hash=55350',
-        content: 'Good morning, How are you? What about our next meeting?'
+        message: 'Good morning, How are you? What about our next meeting?'
       }, {
         type: 0,
         avarta: 'https://api.lorem.space/image/face?hash=55350',
-        content: 'Good morning'
+        message: 'Good morning'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'Wow thats great'
+        message: 'Wow thats great'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'đi suối nên mụi ng đem đồ theo tắm đc nha'
+        message: 'đi suối nên mụi ng đem đồ theo tắm đc nha'
       }, {
         type: 0,
         avarta: 'https://api.lorem.space/image/face?hash=55350',
-        content: 'Ủa tắm mà cũng ép'
+        message: 'Ủa tắm mà cũng ép'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'Thường tắm tui ko có mặc đồ bạn'
+        message: 'Thường tắm tui ko có mặc đồ bạn'
       }, {
         type: 0,
         avarta: 'https://api.lorem.space/image/face?hash=55350',
-        content: 'Chơi vậy rồi ai dám chơi lại anh '
+        message: 'Chơi vậy rồi ai dám chơi lại anh '
       }, {
         type: 0,
         avarta: 'https://api.lorem.space/image/face?hash=55350',
-        content: 'Hi mn.. Mình là mem mới.. Mong các bạn nhẹ nhàng tay ga cho mình theo với nhé!'
+        message: 'Hi mn.. Mình là mem mới.. Mong các bạn nhẹ nhàng tay ga cho mình theo với nhé!'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'Lớn rồi nha mậy.. dạo này t hay cọc lắm á.. múc m giờ :))))'
+        message: 'Lớn rồi nha mậy.. dạo này t hay cọc lắm á.. múc m giờ :))))'
       }, {
         type: 1,
         avarta: 'https://api.lorem.space/image/face?hash=28212',
-        content: 'Vậy đổi giờ tập trung đi @Nguyễn Đức Trường Giang 9h30 đi..'
+        message: 'Vậy đổi giờ tập trung đi @Nguyễn Đức Trường Giang 9h30 đi..'
+      }],
+      user_current: [{
+        name: 'Toni Dev',
+        avarta: 'https://api.lorem.space/image/face?hash=88560'
+      }, {
+        name: 'Calvin Tuan',
+        avarta: 'https://api.lorem.space/image/face?hash=26448'
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=27312'
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=26448'
+      }],
+      message_user_current: [{
+        name: 'Toni Dev',
+        avarta: 'https://api.lorem.space/image/face?hash=88560',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 1
+      }, {
+        name: 'Calvin Tuan',
+        avarta: 'https://api.lorem.space/image/face?hash=26448',
+        mess_short: '...',
+        type: 'not_seen',
+        time: '22/10/2019',
+        id: 2
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 3
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 4
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 5
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 6
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 7
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 8
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 9
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 10
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 11
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 12
+      }, {
+        name: 'Henry',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 13
+      }, {
+        name: 'Henry1',
+        avarta: 'https://api.lorem.space/image/face?hash=2642731248',
+        mess_short: '...',
+        type: 'seen',
+        time: '22/10/2019',
+        id: 14
       }]
     };
+  },
+  filters: {
+    truncate: function truncate(value) {
+      if (value && value.length > 5) {
+        value = value.substring(0, 5) + '...';
+      }
+
+      return value;
+    }
+  },
+  methods: {
+    change_user_active: function change_user_active(id) {
+      this.current_message = id;
+    },
+    loadMessage: function loadMessage() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return axios.get('/messages');
+
+              case 3:
+                response = _context.sent;
+                _this.list_messages = response.data;
+                console.log(response.data);
+                _context.next = 11;
+                break;
+
+              case 8:
+                _context.prev = 8;
+                _context.t0 = _context["catch"](0);
+                console.log(_context.t0);
+
+              case 11:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 8]]);
+      }))();
+    },
+    sendMessage: function sendMessage() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.prev = 0;
+                _context2.next = 3;
+                return axios.post('/messages', {
+                  message: _this2.message
+                });
+
+              case 3:
+                response = _context2.sent;
+
+                _this2.list_messages.push(response.data.message);
+
+                _this2.message = '';
+                _context2.next = 11;
+                break;
+
+              case 8:
+                _context2.prev = 8;
+                _context2.t0 = _context2["catch"](0);
+                console.log(_context2.t0);
+
+              case 11:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, null, [[0, 8]]);
+      }))();
+    }
+  },
+  created: function created() {
+    this.loadMessage();
   }
 });
 
@@ -5585,6 +5836,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -5609,15 +5861,18 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
-Vue.component('chat-layout', (__webpack_require__(/*! ./layouts/ChatLayout.vue */ "./resources/js/layouts/ChatLayout.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('chat-layout', (__webpack_require__(/*! ./layouts/ChatLayout.vue */ "./resources/js/layouts/ChatLayout.vue")["default"]));
+
+ // import Vuex from 'vuex'
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-var app = new Vue({
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: '#app',
   data: {
     currentUserLogin: {}
@@ -5691,15 +5946,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
-// import Echo from 'laravel-echo';
-// window.Pusher = require('pusher-js');
+
+ // window.Pusher = require('pusher-js');
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
 //     key: process.env.MIX_PUSHER_APP_KEY,
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
 
 window.io = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/lib/index.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
@@ -41322,7 +41576,139 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "flex w-full fixed h-full divide-x-[1px]" }, [
-    _vm._m(0),
+    _c("aside", { staticClass: "bg-white flex divide-x-[1px]" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "aside-main w-[400px]" }, [
+        _c("div", { staticClass: "py-4 h-full" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "user-recent flex gap-2 px-4 my-2" },
+            _vm._l(_vm.user_current, function (user, index) {
+              return _c(
+                "div",
+                {
+                  key: index,
+                  staticClass: "avatar blur-avatar cursor-pointer",
+                },
+                [
+                  _c("div", { staticClass: "rounded-xl" }, [
+                    _c("img", { attrs: { src: user.avarta } }),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "user-name absolute bottom-2 left-0 w-full h-4",
+                    },
+                    [
+                      _c(
+                        "h4",
+                        {
+                          staticClass:
+                            "text-white text-xs flex justify-between items-center px-2",
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(_vm._f("truncate")(user.name, 5)) +
+                              "\n                                "
+                          ),
+                          _c("div", {
+                            staticClass:
+                              "action w-2 h-2 rounded-full badge-success",
+                          }),
+                        ]
+                      ),
+                    ]
+                  ),
+                ]
+              )
+            }),
+            0
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-5 h-full" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "px-4 my-2" }, [
+              _c(
+                "div",
+                { staticClass: "bg-gray-100 flex gap-1 px-2 rounded-md " },
+                [
+                  _c("SearchIcon", { staticClass: "w-5 text-gray-500" }),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass:
+                      "input bg-transparent w-full input-xs text-sm mt-2 mb-2 focus:outline-none",
+                    attrs: { type: "text", placeholder: "Search message" },
+                  }),
+                ],
+                1
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "recents_message mt-4 h-recent" },
+              _vm._l(_vm.message_user_current, function (item, index) {
+                return _c(
+                  "div",
+                  {
+                    key: index,
+                    staticClass:
+                      "flex gap-4 hover:bg-gray-200 py-4 px-4 cursor-pointer ease-linear",
+                    class:
+                      item.id == _vm.current_message ? "message_active" : "",
+                    on: {
+                      click: function ($event) {
+                        return _vm.change_user_active(item.id)
+                      },
+                    },
+                  },
+                  [
+                    _c("div", { staticClass: "avatar online" }, [
+                      _c("div", { staticClass: "w-11 rounded-full" }, [
+                        _c("img", { attrs: { src: item.avarta } }),
+                      ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-full" }, [
+                      _c(
+                        "h3",
+                        {
+                          staticClass:
+                            "font-bold flex items-center justify-between",
+                        },
+                        [
+                          _vm._v(_vm._s(item.name) + " "),
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "text-xs text-gray-500 font-extralight",
+                            },
+                            [_vm._v(_vm._s(item.time))]
+                          ),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "text-xs" }, [
+                        _vm._v(_vm._s(item.mess_short)),
+                      ]),
+                    ]),
+                  ]
+                )
+              }),
+              0
+            ),
+          ]),
+        ]),
+      ]),
+    ]),
     _vm._v(" "),
     _c(
       "div",
@@ -41339,7 +41725,7 @@ var render = function () {
                   "bg-white h-20 p-4 flex justify-between items-center rounded-sm shadow-sm",
               },
               [
-                _vm._m(1),
+                _vm._m(3),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -41390,13 +41776,13 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("div", [
-                      _vm._m(2, true),
+                      _vm._m(4, true),
                       _vm._v(" "),
                       _c(
                         "div",
                         {
                           staticClass:
-                            "message_content text-base p-4 rounded-3xl",
+                            "message_content p-4 rounded-3xl text-sm",
                         },
                         [_vm._v(_vm._s(message.content))]
                       ),
@@ -41447,50 +41833,50 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("aside", { staticClass: "bg-white flex divide-x-[1px]" }, [
-      _c("nav", { staticClass: "bg-white w-24 divide-y" }, [
-        _c("div", { staticClass: "p-4" }, [
-          _c("img", {
-            staticClass: "w-9 m-auto",
-            attrs: { src: "images/logo.png", alt: "" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-4 flex flex-row justify-center" }, [
-          _c("div", { staticClass: "avatar" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "w-11 mask mask-hexagon ring ring-primary ring-offset-base-100 ring-offset-2",
-              },
-              [
-                _c("img", {
-                  attrs: {
-                    src: "https://api.lorem.space/image/face?hash=55350",
-                  },
-                }),
-              ]
-            ),
-          ]),
-        ]),
+    return _c("nav", { staticClass: "bg-white w-24 divide-y" }, [
+      _c("div", { staticClass: "p-4" }, [
+        _c("img", {
+          staticClass: "w-9 m-auto",
+          attrs: { src: "images/logo.png", alt: "" },
+        }),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "aside-main p-4 w-[300px]" }, [
-        _c("div", [
-          _c("h2", { staticClass: "text-2xl font-bold" }, [_vm._v("Chats")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-sm" }, [
-            _vm._v("Chat form your friends"),
-          ]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass:
-              "input input-bordered w-full max-w-xs input-sm mt-2 mb-2",
-            attrs: { type: "text", placeholder: "Search message" },
-          }),
+      _c("div", { staticClass: "p-4 flex flex-row justify-center" }, [
+        _c("div", { staticClass: "avatar" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-11 mask mask-hexagon ring ring-primary ring-offset-base-100 ring-offset-2",
+            },
+            [
+              _c("img", {
+                attrs: { src: "https://api.lorem.space/image/face?hash=55350" },
+              }),
+            ]
+          ),
         ]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "px-4" }, [
+      _c("h2", { staticClass: "text-2xl font-bold" }, [_vm._v("Chats")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-sm" }, [_vm._v("Chat form your friends")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "px-4" }, [
+      _c("h2", { staticClass: "text-2xl font-bold" }, [_vm._v("Recent")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-sm" }, [_vm._v("Start New Conversation")]),
     ])
   },
   function () {
@@ -53792,7 +54178,7 @@ module.exports = yeast;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"axios@^0.21","name":"axios","escapedName":"axios","rawSpec":"^0.21","saveSpec":null,"fetchSpec":"^0.21"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_shasum":"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575","_spec":"axios@^0.21","_where":"/home/trongdev/dev/chat_simple","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundleDependencies":false,"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"deprecated":false,"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","/home/trongdev/dev/chat_simple"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"/home/trongdev/dev/chat_simple","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 
