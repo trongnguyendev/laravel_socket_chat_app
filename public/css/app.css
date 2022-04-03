@@ -14287,9 +14287,6 @@ body[dir="rtl"] .checkbox:checked,
 .-ml-px {
   margin-left: -1px;
 }
-.block {
-  display: block;
-}
 .flex {
   display: flex;
 }
